@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="Jacques de Jager", page_icon=":briefcase:", layout="centered")
 
 # Load images
-profile_img = Image.open("Images/Profile.jpg")
+profile_img = Image.open("Images/Profile.jpeg")
 linkedin_icon = Image.open("Images/Linkedin.png")
 email_icon = Image.open("Images/Mail.png")
 
