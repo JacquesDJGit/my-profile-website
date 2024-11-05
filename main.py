@@ -5,9 +5,9 @@ from PIL import Image
 st.set_page_config(page_title="Jacques de Jager - CV", page_icon=":briefcase:", layout="centered")
 
 # Load images
-profile_img = Image.open(r"C:\Users\Jacques\OneDrive\Documents\JDJ Personal\Education\Python\Projects\JDJ Profile Bio\Images\Profile.jpeg")
-linkedin_icon = Image.open(r"C:\Users\Jacques\OneDrive\Documents\JDJ Personal\Education\Python\Projects\JDJ Profile Bio\Images\Linkedin.png")
-email_icon = Image.open(r"C:\Users\Jacques\OneDrive\Documents\JDJ Personal\Education\Python\Projects\JDJ Profile Bio\Images\Mail.png")
+profile_img = Image.open("Images/Profile.jpg")
+linkedin_icon = Image.open("Images/Linkedin.png")
+email_icon = Image.open("Images/Mail.png")
 
 # Header section with profile image and contact information
 col1, col2 = st.columns([1, 3])
