@@ -19,13 +19,14 @@ with col2:
     st.write("Chartered Accountant | Finance Professional | FMVA")
     st.write("Passionate about entrepreneurship, investments, and value generation.")
     st.write("📧 Email: jacquesdj@outlook.com")
-    st.write("[LinkedIn Profile](https://www.linkedin.com/in/jacquesrdejager/)")
+    st.write("🌐 LinkedIn: [Profile](https://www.linkedin.com/in/jacquesrdejager/)")
 
 # Profile Summary
 st.header("Profile Summary")
 st.write("""
 A business enthusiast with four years of experience spanning audit, advisory, finance, and investments. Adaptable and skilled in fast-paced environments, I transitioned from audit to private equity, gaining knowledge in investment analysis and deal structuring. My diverse background equips me with a solid understanding of business operations and financial strategies.
 """)
+st.write("**Motto:** *Grind in your 20s, Build in your 30s, Grow in your 40s.*")
 
 # Experience Section
 st.header("Professional Experience")
@@ -55,8 +56,8 @@ Gained foundational experience in audit and advisory, achieving the highest perf
 
 # Education
 st.header("Education")
-st.write("**Bachelor of Accounting**")
-st.write("**Post-Graduate in Accounting**")
+st.write("**Bachelor of Accounting (BAcc)**")
+st.write("**Post-Graduate in Accounting (BAccHons)**")
 st.write("Majors: Accounting, Tax, Audit, Financial Management")
 st.write("**Institution**: Stellenbosch University")
 
@@ -69,23 +70,20 @@ st.write("- **Financial Modeling & Valuations Analyst (FMVA)**")
 # Skills Section with Icons
 st.header("Skills")
 st.write("• Leadership 🏅 | • Problem-Solving 💡 | • Analytical 🔍 | • Detail-Oriented ✏️")
-st.write("• Excel Proficiency 📊 | • Financial Modeling 💼 | • Investment Analysis 📈")
+st.write("• Excel, Word, and PowerPoint Proficiency 📊 | • Financial Modeling 💼 | • Limited Python Knowledge 🐍")
 
 # Industry Experience
 st.header("Industry Experience")
 st.write("Financial Services, Hedge Funds, Private Equity, Logistics, Manufacturing, Retail, Fast Foods, Agriculture, SaaS.")
 
-# Projects
-st.header("Projects")
-st.subheader("Long-Term Incentive Plan for Private Equity")
-st.write("""
-Designed a performance-based incentive plan for a private equity firm, distributing performance fees based on merit.
-""")
-st.subheader("Python Development Projects")
-st.write("""
-- **QR Code Generator**: Created a tool for quick QR code generation.
-- **Finchat Scrape**: Developed a data scraper for financial websites.
-""")
+# Languages
+st.header("Languages")
+st.write("**English**: Fully proficient")
+st.write("**Afrikaans**: Fully proficient")
+
+# Investment Approach
+st.header("Investment Philosophy")
+st.write("I take a long-term view on investments and value creation, aiming to generate sustainable growth over time.")
 
 # Community Involvement
 st.header("Community Involvement")
@@ -95,4 +93,4 @@ st.write("- Church Outreach Initiatives")
 
 # Footer with Social Links
 st.write("---")
-st.write("Thank you for visiting my CV. Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/jacquesrdejager/) or email for collaboration or further discussions.")
+st.write("Thank you for visiting my website. Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/jacquesrdejager/) or email for collaboration or further discussions.")
