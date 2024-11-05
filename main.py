@@ -2,12 +2,12 @@ import streamlit as st
 from PIL import Image
 
 # Set up the page configuration
-st.set_page_config(page_title="Jacques de Jager - CV", page_icon=":briefcase:", layout="centered")
+st.set_page_config(page_title="Jacques de Jager", page_icon=":briefcase:", layout="centered")
 
 # Load images
-profile_img = Image.open(r"C:\Users\Jacques\OneDrive\Documents\JDJ Personal\Education\Python\Projects\JDJ Profile Bio\Images\Profile.jpeg")
-linkedin_icon = Image.open(r"C:\Users\Jacques\OneDrive\Documents\JDJ Personal\Education\Python\Projects\JDJ Profile Bio\Images\Linkedin.png")
-email_icon = Image.open(r"C:\Users\Jacques\OneDrive\Documents\JDJ Personal\Education\Python\Projects\JDJ Profile Bio\Images\Mail.png")
+profile_img = Image.open("Images/Profile.jpg")
+linkedin_icon = Image.open("Images/Linkedin.png")
+email_icon = Image.open("Images/Mail.png")
 
 # Header section with profile image and contact information
 col1, col2 = st.columns([1, 3])
@@ -15,24 +15,22 @@ with col1:
     st.image(profile_img, width=150)
 
 with col2:
-    st.title("Jacques de Jager, CA(SA)")
-    st.write("Chartered Accountant | Finance Professional")
-    st.write("Passionate about entrepreneurship, investment analysis, and value generation.")
-    st.image(email_icon, width=20)
+    st.title("Jacques de Jager CA(SA)")
+    st.write("Chartered Accountant | Finance Professional | FMVA")
+    st.write("Passionate about entrepreneurship, investments, and value generation.")
     st.write("📧 Email: jacquesdj@outlook.com")
-    st.image(linkedin_icon, width=20)
     st.write("[LinkedIn Profile](https://www.linkedin.com/in/jacquesrdejager/)")
 
 # Profile Summary
 st.header("Profile Summary")
 st.write("""
-A business enthusiast with four years of experience spanning audit, advisory, finance, and investments. Adaptable and skilled in fast-paced environments, I transitioned from audit to private equity, gaining in-depth knowledge in investment analysis and deal structuring. My diverse background equips me with a solid understanding of business operations and financial strategies.
+A business enthusiast with four years of experience spanning audit, advisory, finance, and investments. Adaptable and skilled in fast-paced environments, I transitioned from audit to private equity, gaining knowledge in investment analysis and deal structuring. My diverse background equips me with a solid understanding of business operations and financial strategies.
 """)
 
 # Experience Section
 st.header("Professional Experience")
 st.subheader("Investment Analyst, 2024 - Present")
-st.write("**Company**: Agventure")
+st.write("**Company**: Paladin Africa / Agventure")
 st.write("""
 Conducted comprehensive research and analysis for identifying investment opportunities. Responsibilities included:
 - Deal origination and evaluation
@@ -66,7 +64,7 @@ st.write("**Institution**: Stellenbosch University")
 st.header("Certifications")
 st.write("- **Initial Test of Competence (ITC)** – First Attempt")
 st.write("- **Assessment of Professional Competence (APC)** – First Attempt")
-st.write("- **Financial Modeling & Valuations Analyst**")
+st.write("- **Financial Modeling & Valuations Analyst (FMVA)**")
 
 # Skills Section with Icons
 st.header("Skills")
@@ -75,7 +73,7 @@ st.write("• Excel Proficiency 📊 | • Financial Modeling 💼 | • Investm
 
 # Industry Experience
 st.header("Industry Experience")
-st.write("Financial Services, Hedge Funds, Private Equity, Logistics, Manufacturing, Retail, Fast Foods")
+st.write("Financial Services, Hedge Funds, Private Equity, Logistics, Manufacturing, Retail, Fast Foods, Agriculture, SaaS.")
 
 # Projects
 st.header("Projects")
