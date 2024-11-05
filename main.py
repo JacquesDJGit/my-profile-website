@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw
 st.set_page_config(page_title="Jacques de Jager", page_icon=":briefcase:", layout="centered")
 
 # Load and modify the profile image to have rounded corners
-def make_rounded_image(img_path, size=(180, 180)):
+def make_rounded_image(img_path, size=(200, 200)):
     img = Image.open(img_path).resize(size)
     mask = Image.new("L", img.size, 0)
     draw = ImageDraw.Draw(mask)
@@ -95,6 +95,10 @@ st.header("Community Involvement")
 st.write("- Mosaic Community Development")
 st.write("- Helpmekaar and Hospital Outreaches")
 st.write("- Church Outreach Initiatives")
+
+# Hobbies
+st.header("Hobbies")
+st.write("I enjoy reading books and news, hiking, jogging, cycling, tennis, padel, politics, and networking.")
 
 # Footer with Social Links
 st.write("---")
