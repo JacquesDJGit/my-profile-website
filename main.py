@@ -18,17 +18,13 @@ profile_img = make_rounded_image("Images/Profile.jpeg")
 linkedin_icon = Image.open("Images/Linkedin.png")
 email_icon = Image.open("Images/Mail.png")
 
-# Header section with profile image and contact information
-col1, col2 = st.columns([1, 3])
-with col1:
-    st.image(profile_img, width=180)  # Adjusted width for a larger display
-
-with col2:
-    st.title("Jacques de Jager CA(SA)")
-    st.write("Chartered Accountant | Finance Professional | FMVA")
-    st.write("Passionate about entrepreneurship, investments, and value generation.")
-    st.write("📧 Email: jacquesdj@outlook.com")
-    st.write("🌐 LinkedIn: [Profile](https://www.linkedin.com/in/jacquesrdejager/)")
+# Display profile image at the top with name and title underneath
+st.image(profile_img, width=180)  # Adjusted width for a larger display
+st.title("Jacques de Jager CA(SA)")
+st.write("Chartered Accountant | Finance Professional | FMVA")
+st.write("Passionate about entrepreneurship, investments, and value generation.")
+st.write("📧 Email: jacquesdj@outlook.com")
+st.write("🌐 LinkedIn: [Profile](https://www.linkedin.com/in/jacquesrdejager/)")
 
 # Profile Summary
 st.header("Profile Summary")
