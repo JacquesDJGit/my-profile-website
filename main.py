@@ -1,18 +1,27 @@
 import streamlit as st
-from PIL import Image
+from PIL import Image, ImageDraw
 
 # Set up the page configuration
 st.set_page_config(page_title="Jacques de Jager", page_icon=":briefcase:", layout="centered")
 
-# Load images
-profile_img = Image.open("Images/Profile.jpeg")
+# Load and modify the profile image to have rounded corners
+def make_rounded_image(img_path, size=(180, 180)):
+    img = Image.open(img_path).resize(size)
+    mask = Image.new("L", img.size, 0)
+    draw = ImageDraw.Draw(mask)
+    draw.ellipse((0, 0) + img.size, fill=255)
+    rounded_img = Image.new("RGBA", img.size)
+    rounded_img.paste(img, (0, 0), mask)
+    return rounded_img
+
+profile_img = make_rounded_image("Images/Profile.jpeg")
 linkedin_icon = Image.open("Images/Linkedin.png")
 email_icon = Image.open("Images/Mail.png")
 
 # Header section with profile image and contact information
 col1, col2 = st.columns([1, 3])
 with col1:
-    st.image(profile_img, width=150)
+    st.image(profile_img, width=180)  # Adjusted width for a larger display
 
 with col2:
     st.title("Jacques de Jager CA(SA)")
@@ -31,11 +40,11 @@ st.write("**Motto:** *Grind in your 20s, Build in your 30s, Grow in your 40s.*")
 # Experience Section
 st.header("Professional Experience")
 st.subheader("Investment Analyst, 2024 - Present")
-st.write("**Company**: Paladin Africa / Agventure")
+st.write("**Company**: Paladin Africa / Agventure (Private Equity Group)")
 st.write("""
 Conducted comprehensive research and analysis for identifying investment opportunities. Responsibilities included:
 - Deal origination and evaluation
-- Managing due diligence, financial modeling, and negotiations
+- Managing due diligence, financial modeling, deal structuring, and negotiations
 - Contributing to growth strategies for portfolio companies
 """)
 
